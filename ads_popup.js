@@ -171,7 +171,7 @@
                         } else {
                             f({
                                 link: t,
-                                url: r._protocol + "gdata.youtube.com/feeds/api/videos/" + i + "?v=2&alt=json"
+                                url: r._protocol + "gdata.youtube.com/feeds/api/videos/" + i + "?v=3&alt=json"
                             });
                             h = r._protocol + "i.ytimg.com/vi/" + i + "/default.jpg"
                         }
