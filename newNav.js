@@ -35,12 +35,12 @@
 				$drawerRight.animate({marginRight : 0},400);
 				$wrapper.animate({marginLeft : -300},400);
 				$('#headerA #main_navbar').removeClass('navbar-fixed-top');
-
+				$('#headerA .topA').addClass('solid');
 			}
 			else{
 				$drawerRight.animate({marginRight : -300},400);
 				$wrapper.animate({marginLeft : 0},400);
-			 
+				$('#headerA .topA').removeClass('solid');
 			}
 
 		})
@@ -48,7 +48,7 @@
 	function setHeaderBackground() {		
 		var scrollTop = jQuery(window).scrollTop(); // our current vertical position from the top	
 		if (scrollTop > 300 || jQuery(window).width() < 700) { 
-			jQuery('#headerA .topA').addClass('solid');
+
 			jQuery('#headerA .dropdown-menu').removeClass('wbg');
 			jQuery('#headerA .nav').addClass('navbar-default');	
 			jQuery('#headerA a').addClass('wtxt');
@@ -58,15 +58,12 @@
 			jQuery('#Nsearch .search-form').addClass('dakr');	
 			jQuery('#Nsearch .form-control').removeClass('wform'); 
 			jQuery('#headerA .no-border-radius').removeClass('twbg');
-
 			if($wrapper.css('marginLeft')=='-300px'){
 				$drawerRight.animate({marginRight : -300},400);
 				$wrapper.animate({marginLeft : 0},400);
-			 
-
 			}
 		} else {
-			jQuery('#headerA .topA').removeClass('solid');
+
 			jQuery('#headerA .dropdown-menu').addClass('wbg');
 			jQuery('#headerA .nav').removeClass('navbar-default');	
 			jQuery('#headerA a').removeClass('wtxt');
